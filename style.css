@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Noto+Sans:wght@400;500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color : #ff7613;
+    --text-color: #3c3a39; 
+    --title-color: #161515; 
+}
+html{
+    font-size: 8px;
+}
+body{
+    font-family: Inter, sans-serif;
+    color: var(--title-color);
+}
+a{
+    text-decoration: none;
+    color: var(--title-color);
+}
+img{
+    width: 100%;
+}
+.description {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--text-color);
+}
+.title{
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+.item_pretitle{
+    font-size: 1.4rem;
+    color: var(--text-color);
+    font-weight: 300;
+}
+.item_title{
+    font-size: 1.6rem;
+    color: var(--title-color);
+    font-weight: 500;
+    margin: 0.8rem 0;
+}
+.item_subtitle{
+   font-size: 1.5rem; 
+   color: var(--text-color);
+   font-weight: 400;
+   margin-top: 0.5rem;
+}
+.container{
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    padding: 5rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+@media screen and (max-width: 768px){
+    .container{
+        width: 100%;
+        grid-template-columns: 1fr;
+        padding: 3rem;
+        gap: 7rem;
+    }
+}
+.profile{
+   grid-column: 1/-1; 
+   margin: 2rem; 
+}
+.left-side, .right-side{
+   display: flex;
+   flex-direction: column;
+   gap: 5rem;
+}
+.bottom{
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    grid-column: 1/-1;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 4rem;
+}
+.bottom>div{
+    flex: 1;
+}
+@media only screen and (max-width:768px){
+    .profile{
+        margin-bottom: 0;
+    }
+    .bottom{
+        flex-direction: column;
+    }
+}
+.profile_container{
+    display: flex;
+    gap: 1.5rem;   
+}
+.profile_image{
+    max-width: 150px;
+}
+.first_name{
+    color: var(--title-color);
+    font-weight: 150;
+    font-size: clamp(2.2rem,8vw,4rem);
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: -0.6rem;
+}
+.last_name{
+   color: var(--primary-color) ;
+   font-weight: 500;
+   font-size: clamp(2.3rem, 15vw, 7rem);
+   text-transform: uppercase;
+   display: block;
+}
+.profile_title{
+    color: var(--title-color);
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-transform: uppercase;    
+}
+.download_button{
+    display: block;
+    text-decoration: underline;
+    font-size: 1.4rem;
+    margin-top: 1rem;   
+}
+.download_button:hover{
+    color: var(--primary-color);
+}
+@media screen and (max-width: 768px){
+    .profile_container{
+       flex-direction: column;
+    }
+}
+.skills_list{
+   margin-top: 1rem;
+   margin-left: 2rem; 
+   line-height: 2;
+}
+.project-div{
+   margin-top: 1.8rem;
+}
+.project_name{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.certificate{
+    margin-top: 1.5rem;
+}
+.edu_item{
+    margin-top: 1.5rem;
+}
+.ach_item{
+    margin-top: 1.5rem;
+    margin-left: 2rem;
+    line-height: 2;    
+    font-size: 1.5rem;
+    color: var(--text-color);
+}
+.hobbies_item{
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.hobby{
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    color: var(--text-color);
+}
+.hobby svg{
+    width: 2rem;
+}
+
+.contact_items{
+    margin-top: 1.5rem;
+}
+.social_item{
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: flex-start;
+    color: var(--text-color);
+}
+.social_item svg {
+    width: 2rem;
+}
+.social_item:hover{
+    color: var(--primary-color);
+}
+hr{
+  grid-column: 1/-1;
+  width: 80%; 
+  margin: 0 auto;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  border: none;
+  border-top: 2px solid rgba(128, 128, 128, 0.437);
+}
+@media only screen and (max-width:768px){
+    hr{
+        margin: 0 auto;
+    }
+}
