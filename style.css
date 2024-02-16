@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    /* background-color: #161515; */
 }
 :root{
     --primary-color : #ff7613;
@@ -21,34 +22,35 @@ a{
     color: var(--title-color);
 }
 img{
-    width: 100%;
+    width: 90%;
 }
 .description {
     margin-top: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 400;
     color: var(--text-color);
 }
 .title{
     color: var(--primary-color);
     font-weight: 700;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     text-transform: uppercase;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.2rem;
+    margin-top: -1.5rem;
 }
 .item_pretitle{
-    font-size: 1.4rem;
+    font-size: 1.0rem;
     color: var(--text-color);
     font-weight: 300;
 }
 .item_title{
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     color: var(--title-color);
     font-weight: 500;
     margin: 0.8rem 0;
 }
 .item_subtitle{
-   font-size: 1.5rem; 
+   font-size: 1.1rem; 
    color: var(--text-color);
    font-weight: 400;
    margin-top: 0.5rem;
@@ -58,9 +60,9 @@ img{
     width: 90%;
     margin: 0 auto;
     display: grid;
-    padding: 5rem;
+    padding: 3rem;
     grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    gap: 1.5rem;
 }
 @media screen and (max-width: 768px){
     .container{
@@ -87,7 +89,7 @@ img{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    gap: 4rem;
+    gap: 3rem;
 }
 .bottom>div{
     flex: 1;
@@ -104,35 +106,37 @@ img{
     display: flex;
     gap: 1.5rem;   
 }
-.profile_image{
+/* .profile_image{
     max-width: 150px;
-}
+} */
 .first_name{
     color: var(--title-color);
-    font-weight: 150;
-    font-size: clamp(2.2rem,8vw,4rem);
+    font-weight: 250;
+    font-size: clamp(1.0rem, 10vw, 5rem);
     text-transform: uppercase;
     display: block;
-    margin-bottom: -0.6rem;
+    margin-bottom: -0.2rem;
 }
 .last_name{
    color: var(--primary-color) ;
    font-weight: 500;
-   font-size: clamp(2.3rem, 15vw, 7rem);
+   font-size: clamp(0.9rem, 10vw, 3rem);
    text-transform: uppercase;
    display: block;
+   margin-bottom: 0.6rem;
 }
 .profile_title{
     color: var(--title-color);
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     font-weight: 400;
     text-transform: uppercase;    
 }
 .download_button{
     display: block;
     text-decoration: underline;
-    font-size: 1.4rem;
-    margin-top: 1rem;   
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    color: white;   
 }
 .download_button:hover{
     color: var(--primary-color);
@@ -148,23 +152,26 @@ img{
    line-height: 2;
 }
 .project-div{
-   margin-top: 1.8rem;
+   margin-top: 1.5rem;
 }
 .project_name{
-    font-size: 1.5rem;
-    font-weight: 700;
+    font-size: 1.1rem;
+    color: var(--text-color);
+    /* line-height: 2; */
+    /* font-weight: 700; */
 }
 .certificate{
-    margin-top: 1.5rem;
+    margin-top: 1.2rem;
 }
 .edu_item{
-    margin-top: 1.5rem;
+    margin-top: 1.2rem;
+    font-size: 1.1rem;
 }
 .ach_item{
-    margin-top: 1.5rem;
+    margin-top: 1.2rem;
     margin-left: 2rem;
-    line-height: 2;    
-    font-size: 1.5rem;
+    line-height: 2;     
+    font-size: 1.1rem;
     color: var(--text-color);
 }
 .hobbies_item{
@@ -175,7 +182,7 @@ img{
     gap: 2rem;
 }
 .hobby{
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -191,8 +198,8 @@ img{
     margin-top: 1.5rem;
 }
 .social_item{
-    margin-top: 1.5rem;
-    font-size: 1.5rem;
+    margin-top: 1.0rem;
+    font-size: 1.1rem;
     display: flex;
     gap: 0.5rem;
     align-items: center;
@@ -200,7 +207,7 @@ img{
     color: var(--text-color);
 }
 .social_item svg {
-    width: 2rem;
+    width: 1.3rem;
 }
 .social_item:hover{
     color: var(--primary-color);
