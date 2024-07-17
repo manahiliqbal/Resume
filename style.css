@@ -6,7 +6,8 @@
     /* background-color: #161515; */
 }
 :root{
-    --primary-color : #ff7613;
+    /* --primary-color : #ff7613; */
+    --primary-color : rgb(45, 42, 42);
     --text-color: #3c3a39; 
     --title-color: #161515; 
 }
@@ -16,6 +17,7 @@ html{
 body{
     font-family: Inter, sans-serif;
     color: var(--title-color);
+    justify-content: space-between;
 }
 a{
     text-decoration: none;
@@ -28,6 +30,7 @@ img{
     margin-top: 1rem;
     font-size: 1.2rem;
     font-weight: 400;
+    justify-content: space-between;
     color: var(--text-color);
 }
 .title{
@@ -44,7 +47,7 @@ img{
     font-weight: 300;
 }
 .item_title{
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     color: var(--title-color);
     font-weight: 500;
     margin: 0.8rem 0;
@@ -72,10 +75,18 @@ img{
         gap: 7rem;
     }
 }
-.profile{
+/* .profile{
    grid-column: 1/-1; 
    margin: 2rem; 
+} */
+.profile {
+    grid-column: 1 / -1;
+    margin: 0.2rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;   
+    justify-self: start;
 }
+  
 .left-side, .right-side{
    display: flex;
    flex-direction: column;
@@ -102,17 +113,17 @@ img{
         flex-direction: column;
     }
 }
-.profile_container{
-    display: flex;
-    gap: 1.5rem;   
+.profile_container{ 
+    display: flex; 
+    gap: 1.5rem; 
 }
 /* .profile_image{
     max-width: 150px;
 } */
 .first_name{
     color: var(--title-color);
-    font-weight: 250;
-    font-size: clamp(1.0rem, 10vw, 5rem);
+    font-weight: 25;
+    font-size: clamp(1.0rem, 10vw, 3rem);
     text-transform: uppercase;
     display: block;
     margin-bottom: -0.2rem;
@@ -136,10 +147,10 @@ img{
     text-decoration: underline;
     font-size: 1.1rem;
     margin-top: 1rem;
-    color: white;   
+    color: var(--text-color);   
 }
 .download_button:hover{
-    color: var(--primary-color);
+    color: rgb(179, 179, 179);
 }
 @media screen and (max-width: 768px){
     .profile_container{
@@ -153,10 +164,11 @@ img{
 }
 .project-div{
    margin-top: 1.5rem;
+   justify-content: space-between;
 }
 .project_name{
-    font-size: 1.1rem;
-    color: var(--text-color);
+    font-size: 1.25rem;
+    color: var(--title-color);
     /* line-height: 2; */
     /* font-weight: 700; */
 }
@@ -170,10 +182,16 @@ img{
 .ach_item{
     margin-top: 1.2rem;
     margin-left: 2rem;
-    line-height: 2;     
-    font-size: 1.1rem;
+    line-height: 1.7;  
+    font-weight: 400;   
+    font-size: 1.2rem;
     color: var(--text-color);
 }
+/* margin-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    justify-content: space-between;
+    color: var(--text-color); */
 .hobbies_item{
     margin-top: 1.5rem;
     display: flex;
